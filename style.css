@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 100px;
+    background-color: darkblue;   
+}
+main{
+    height: calc(100vh - 100px);
+    background-color: darkred;
+}
+footer{
+    height: 100px;
+    background-color: darkslategray;
+    position: relative;
+    z-index: 2;
+}
+aside{
+    height:calc(100vh - 100px);
+    background-color: black;
+    width: 20%;
+    position: relative;
+    z-index: 1;
+
+}
