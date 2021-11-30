@@ -1,27 +1,67 @@
+/* GENERICS */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header{
-    height: 100px;
-    background-color: darkblue;   
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.clearfix{
+    display: table;
+    content: '';
+    clear: both;
+}
+/* UTILS */
+.wrapper{
+    height:calc(100vh - 100px);
+    background-color: chartreuse;
+}
+aside{
+    height: calc(100vh - 100px);
+    width: 50px;
+    background-color: black;
+    float: left;
+    position: absolute;
+    z-index: 1;
 }
 main{
-    height: calc(100vh - 100px);
-    background-color: darkred;
+    height: 100vh;
+    background-color: #141922;
+}
+header{
+    height: 100px;
+    background-color: rgba(8, 11, 18, 0.5);
+    position: relative;
 }
 footer{
     height: 100px;
-    background-color: darkslategray;
-    position: relative;
-    z-index: 2;
+    background-color: #282828;
 }
-aside{
-    height:calc(100vh - 100px);
-    background-color: black;
-    width: 20%;
-    position: relative;
-    z-index: 1;
 
+/* BUTTOM */
+.buttoms a{
+    text-decoration: none;
+    color: white;
+    border: 2px solid;
+    padding: 10px 20px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 30px;
+    right: 15px;   
+}
+.buttoms a:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* LOGHI */
+
+.logo{
+    padding: 10px;
+}
+.logo:hover{
+    cursor: pointer;
+    transform: scale(1.2);
 }
