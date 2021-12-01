@@ -13,44 +13,59 @@
     content: '';
     clear: both;
 }
+body{
+    font-family: 'Arimo', sans-serif;
+}
 /* UTILS */
 .wrapper{
     height:calc(100vh - 100px);
     background-color: chartreuse;
+    display: flex;
 }
 aside{
-    height: calc(100vh - 100px);
-    width: 50px;
+    flex-basis: 50px;
     background-color: black;
-    float: left;
-    position: absolute;
-    z-index: 1;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
+
 main{
-    height: 100vh;
+    flex-grow: 1;
     background-color: #141922;
+    overflow: auto;
 }
 header{
     height: 100px;
-    background-color: rgba(8, 11, 18, 0.5);
-    position: relative;
+    background-color: rgba(8, 11, 18, 0.4);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 footer{
     height: 100px;
     background-color: #282828;
 }
+.text-gray{
+    color: grey;
+}
+.text-white{
+    color: white;
+}
 
 /* BUTTOM */
+.buttoms{
+    padding-right: 15px;
+}
 .buttoms a{
     text-decoration: none;
     color: white;
     border: 2px solid;
     padding: 10px 20px;
-    border-radius: 20px;
-    position: absolute;
-    bottom: 30px;
-    right: 15px;   
-}
+    border-radius: 20px;   
+} 
 .buttoms a:hover{
     cursor: pointer;
     transform: scale(1.1);
@@ -64,4 +79,28 @@ footer{
 .logo:hover{
     cursor: pointer;
     transform: scale(1.2);
+}
+.account{
+    
+}
+
+/* LISTS */
+li, li a{
+    list-style-type: none;
+    text-decoration: none;
+    display: inline-block;
+    color: grey;
+    margin: 10px 4px;
+    padding: 3px;
+    font-size: 14px;
+}
+li, li a:hover{
+    transform: scale(1.1);
+    color: greenyellow;
+}
+.list-top{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
