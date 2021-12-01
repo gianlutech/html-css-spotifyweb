@@ -104,3 +104,12 @@ li, li a:hover{
     flex-wrap: wrap;
     justify-content: center;
 }
+
+/* PLAYLIST */
+.recently{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 35px;
+}
