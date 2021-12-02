@@ -74,6 +74,13 @@ img{
 .b-r-50{
     border-radius: 50%;
 }
+.d-inblk{
+    display: inline-block;
+}
+hr{
+    color: white;
+    margin: 0 30px;
+}
 
 /* BUTTOM */
 .buttoms{
@@ -123,6 +130,12 @@ img{
     background-color: grey;
     padding: 15px;
 }
+.icon.download{
+    padding: 17px;
+}
+.icon.user{
+
+}
 /* LOGHI */
 
 .icon{
@@ -158,6 +171,9 @@ img{
     flex-wrap: wrap;
     justify-content: center;
 }
+.aside-list{
+    overflow: auto;
+}
 
 /* PLAYLIST */
 
@@ -181,16 +197,47 @@ img{
     padding: 15px;
     list-style-type: none;
 }
+.card:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    
+}
 
 
 
 
 
 /* FOOTER */
+.col{
+    float: left;
+}
+.w-25{
+    width: 25%;
+}
+.w-50{
+    width: 50%;
+}
 .now-play{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.song-play{
     height: 50px;
     width: 50px;
+    margin-right: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
 .player{
     font-size: 20px;
-}
+} 

@@ -22,7 +22,7 @@
     <div class="wrapper">
         <!-- SIDEBSAR LATERALE -->
         <aside>
-            <div class="">
+            <section class="function">
                 <div id="logo-large">
                     <img src="img/logo.svg" alt="">
                 </div>
@@ -41,6 +41,9 @@
                     <img class="icon" src="img/libreria.svg" alt="">
                     <span class="name text-grey">La tua libreria</span>
                 </div>
+            </section>
+
+            <section class="aside-list">
                 <div class="playlist-list">
                     <h3 class="text-white">Playlist</h3>
                     <div class="">
@@ -55,17 +58,20 @@
                         <li><a href="#">Nome playlist</a></li>
                         <li><a href="#">Nome playlist</a></li>
                     </ul>
+                </div>
+            </section>
 
-                </div>
-            </div>
-            <div class="account">
+            <section class="account">
                 <div class="logo lg-end">
-                    <img class="icon" src="img/download.svg" alt="">
+                    <img class="icon download" src="img/download.svg" alt="">
+                    <span class="name text-grey">Installa app</span>
                 </div>
+                <hr />
                 <div class="logo lg-end">
-                    <img class="icon" src="img/profile.svg" alt="">
+                    <img class="icon user" src="img/profile.svg" alt="">
+                    <span class="name text-white">John Doe</span>
                 </div>
-            </div>
+            </section>
         </aside>
         <!-- MAIN & HEADER -->
         <main>
@@ -94,7 +100,7 @@
                         <ul class="playlist-gallery">
                             <li>
                                 <div>
-                                    <figure>
+                                    <figure class="card">
                                         <img src="img/metal_lifting.jpg" alt="">
                                     </figure>
                                     <h3>Heavy Metal</h3>
@@ -103,7 +109,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <figure>
+                                    <figure class="card">
                                         <img src="img/stranger.jpeg" alt="">
                                     </figure>
                                     <h3>Stranger Things, Vol.1 (a Netflix original series Soundtrack)</h3>
@@ -112,7 +118,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <figure>
+                                    <figure class="card">
                                         <img src="img/aquietplace.jpeg" alt="">
                                     </figure>
                                     <h3>A quit place</h3>
@@ -121,7 +127,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <figure>
+                                    <figure class="card">
                                         <img src="img/split.jpeg" alt="">
                                     </figure>
                                     <h3>Split</h3>
@@ -130,7 +136,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <figure>
+                                    <figure class="card">
                                         <img src="img/cure.jpeg" alt="">
                                     </figure>
                                     <h3>A cure for wellness</h3>
@@ -139,7 +145,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <figure>
+                                    <figure class="card">
                                         <img src="img/sinister.jpeg" alt="">
                                     </figure>
                                     <h3>Sinister</h3>
@@ -154,7 +160,7 @@
                         <ul class="playlist-gallery">
                             <li>
                                 <div>
-                                    <figure>
+                                    <figure class="card">
                                         <img src="img/radar.jpeg" alt="">
                                     </figure>
                                     <h3>Release Radar</h3>
@@ -162,7 +168,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <figure>
+                                    <figure class="card">
                                         <img src="img/mixdaily.jpeg" alt="">
                                     </figure>
                                     <h3>Daily Mix</h3>
@@ -177,7 +183,7 @@
                         <ul class="playlist-gallery">
                             <li>
                                 <div>
-                                    <figure>
+                                    <figure class="card">
                                         <img class="b-r-50" src="img/youg.jpeg" alt="">
                                     </figure>
                                     <h3>Lana Del Rey</h3>
@@ -185,7 +191,7 @@
                             </li>
                             <li>
                                 <div>
-                                    <figure>
+                                    <figure class="card">
                                         <img class="b-r-50" src="img/einaudi.jpeg" alt="">
                                     </figure>
                                     <h3>Ludovico Einaudi</h3>
@@ -204,14 +210,37 @@
     </div>
     <!-- FOOTER -->
     <footer>
-        <div>
-            <img class="now-play" src="img/sinister.jpeg" alt="">
+        <div class="col w-25">
+            <section class="now-play">
+                <figure class="song-play d-inblk">
+                    <img src="img/sinister.jpeg" alt="">
+                </figure>
+
+                <div class="info d-inblk text-grey">
+                    <h6 class="text-white">Sinister</h6>
+                    <span class="text-grey description">Brano</span>
+                    <span class="text-grey description">Nome</span>
+                </div>
+
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+            </section>
+
+
         </div>
-        <div>
-            <h6 class="text-white">Sinister</h6>
-            <span class="text-grey description">Brano</span>
-            <span class="text-grey description">Nome</span>
-        </div>
+        <div class="col w-50"></div>
+        <div class="col w-25"></div>
+
+
+
+
+
+
+
+    </footer>
+
+    <!--    
+        
         <div>
             <i class="far fa-heart"></i>
             <i class="far fa-folder"></i>
@@ -227,10 +256,9 @@
             <i class="fas fa-list"></i>
             <i class="fas fa-desktop"></i>
             <i class="fas fa-volume-up"></i>
-        </div>
+        </div> -->
 
 
-    </footer>
 </body>
 
 </html>
