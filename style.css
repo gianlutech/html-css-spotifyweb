@@ -200,6 +200,7 @@ hr{
 .card:hover{
     opacity: 0.5;
     cursor: pointer;
+    transform: scale(1.1);
     
 }
 
@@ -208,15 +209,7 @@ hr{
 
 
 /* FOOTER */
-.col{
-    float: left;
-}
-.w-25{
-    width: 25%;
-}
-.w-50{
-    width: 50%;
-}
+
 .now-play{
     display: flex;
     flex-wrap: wrap;
@@ -227,6 +220,29 @@ hr{
     width: 50px;
     margin-right: 10px;
 }
+.control{
+    margin: 0 15px;
+}
+.control:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.time{
+    font-size: 10px;
+}
+.progress-bar, .vol-bar{
+    height: 5px;
+    background-color: grey;
+    border-radius: 5px;
+}
+.progress-bar .value,
+.vol-bar .vol-bar-value{
+    height: 5px;
+    background-color: white;
+    width: 20%;
+    border-radius: 5px;
+}
+
 
 
 
