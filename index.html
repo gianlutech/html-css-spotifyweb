@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="icon" href="img/favicon.ico">
@@ -19,26 +22,48 @@
     <div class="wrapper">
         <!-- SIDEBSAR LATERALE -->
         <aside>
-            <div>
-                <div class="logo">
+            <div class="">
+                <div id="logo-large">
+                    <img src="img/logo.svg" alt="">
+                </div>
+                <div id="logo-small">
                     <img src="img/logo-small.svg" alt="">
                 </div>
-                <div class="logo">
-                    <img src="img/home.svg" alt="">
+                <div class="logo home">
+                    <img class="icon" src="img/home.svg" alt="">
+                    <span class=" name text-white">Home</span>
+                </div>
+                <div class="logo text-grey">
+                    <img class="icon " src="img/search.svg" alt="">
+                    <span class="name">Cerca</span>
                 </div>
                 <div class="logo">
-                    <img src="img/search.svg" alt="">
+                    <img class="icon" src="img/libreria.svg" alt="">
+                    <span class="name text-grey">La tua libreria</span>
                 </div>
-                <div class="logo">
-                    <img src="img/libreria.svg" alt="">
+                <div class="playlist-list">
+                    <h3 class="text-white">Playlist</h3>
+                    <div class="">
+                        <i class="fa fa-plus"></i><span class="text-grey">Crea Playlist</span>
+                    </div>
+                    <ul>
+                        <li><a href="#">Nome playlist</a></li>
+                        <li><a href="#">Nome playlist</a></li>
+                        <li><a href="#">Nome playlist</a></li>
+                        <li><a href="#">Nome playlist</a></li>
+                        <li><a href="#">Nome playlist</a></li>
+                        <li><a href="#">Nome playlist</a></li>
+                        <li><a href="#">Nome playlist</a></li>
+                    </ul>
+
                 </div>
             </div>
             <div class="account">
                 <div class="logo lg-end">
-                    <img src="img/download.svg" alt="">
+                    <img class="icon" src="img/download.svg" alt="">
                 </div>
                 <div class="logo lg-end">
-                    <img src="img/profile.svg" alt="">
+                    <img class="icon" src="img/profile.svg" alt="">
                 </div>
             </div>
         </aside>
@@ -50,27 +75,115 @@
                 </div>
             </header>
             <div class="container">
-                <!-- NAVBAR -->
-                <nav class="navbar-top">
-                    <ul class="list-top">
-                        <li><a href="#">IN EVIDENZA</a></li>
-                        <li><a href="#">PODCAST</a></li>
-                        <li><a href="#">CLASSIFICHE</a></li>
-                        <li><a href="#">GENERI E MOOD</a></li>
-                        <li><a href="#">NUOVE USCITE</a></li>
-                        <li><a href="#">SCOPRI</a></li>
-                    </ul>
-                </nav>
-                <!-- PLAYLIST -->
-                <div class="recently">
-                    <h2 class="text-white">Recently Played</h2>
+                <div id="content">
+                    <!-- NAVBAR -->
+                    <nav class="navbar-top">
+                        <ul class="list-top">
+                            <li><a href="#">IN EVIDENZA</a></li>
+                            <li><a href="#">PODCAST</a></li>
+                            <li><a href="#">CLASSIFICHE</a></li>
+                            <li><a href="#">GENERI E MOOD</a></li>
+                            <li><a href="#">NUOVE USCITE</a></li>
+                            <li><a href="#">SCOPRI</a></li>
+                        </ul>
+                    </nav>
+                    <!-- PLAYLIST -->
+
+                    <section class="recently-played">
+                        <h2 class="text-white">Recently Played</h2>
+                        <ul class="playlist-gallery">
+                            <li>
+                                <div>
+                                    <figure>
+                                        <img src="img/metal_lifting.jpg" alt="">
+                                    </figure>
+                                    <h3>Heavy Metal</h3>
+                                    <div class="subtitle">Subtitle</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <figure>
+                                        <img src="img/metal_lifting.jpg" alt="">
+                                    </figure>
+                                    <h3>Heavy Metal</h3>
+                                    <div class="subtitle">Subtitle</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <figure>
+                                        <img src="img/metal_lifting.jpg" alt="">
+                                    </figure>
+                                    <h3>Heavy Metal</h3>
+                                    <div class="subtitle">Subtitle</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <figure>
+                                        <img src="img/metal_lifting.jpg" alt="">
+                                    </figure>
+                                    <h3>Heavy Metal</h3>
+                                    <div class="subtitle">Subtitle</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <figure>
+                                        <img src="img/metal_lifting.jpg" alt="">
+                                    </figure>
+                                    <h3>Heavy Metal</h3>
+                                    <div class="subtitle">Subtitle</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <figure>
+                                        <img src="img/metal_lifting.jpg" alt="">
+                                    </figure>
+                                    <h3>Heavy Metal</h3>
+                                    <div class="subtitle">Subtitle</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+
+
 
                 </div>
             </div>
-        </main>
+    </div>
+    </main>
     </div>
     <!-- FOOTER -->
     <footer>
+        <div>
+            <img class="now-play" src="img/sinister.jpeg" alt="">
+        </div>
+        <div>
+            <h6 class="text-white">Sinister</h6>
+            <span class="text-grey description">Brano</span>
+            <span class="text-grey description">Nome</span>
+        </div>
+        <div>
+            <i class="far fa-heart"></i>
+            <i class="far fa-folder"></i>
+        </div>
+        <div class="player text-grey">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="fas fa-redo-alt"></i>
+        </div>
+        <div>
+            <i class="fas fa-list"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+        </div>
+
+
     </footer>
 </body>
 

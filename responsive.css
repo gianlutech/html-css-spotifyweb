@@ -1,0 +1,41 @@
+@media screen and (max-width: 576px) {
+    aside{
+        flex-basis: 50px;
+    }
+    #logo-large{
+        display: none;
+    }
+    .name{
+        display: none;
+    }
+    .playlist-list{
+        display: none;
+    }
+    
+    
+}
+@media screen and (min-width: 768px) {
+    aside{
+        flex-basis: 250px;
+    }
+    #logo-small{
+        display: none; 
+    }
+    #content .playlist-gallery li{
+        flex-basis: 25%;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    aside{
+        flex-basis: 250px;
+    }
+    #logo-small{
+        display: none; 
+    }
+    #content .playlist-gallery li{
+        flex-basis: calc(100% / 6);
+    }
+    
+}
